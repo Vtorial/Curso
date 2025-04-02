@@ -1,0 +1,128 @@
+/* GERAL */
+* {
+    padding: 0;
+    margin: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+    transition: 0.4s;
+}
+
+a:hover{
+    color: #ffc0cb;
+}
+
+/* NAVBAR */
+
+#navbar{
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+    border: 3px solid #ffc0cb;
+}
+
+#navbar-inner{
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+#nav-links{
+    display: flex;
+    gap: 1rem;
+
+}
+
+#footer{
+    margin: 1.5rem;
+
+}
+
+/*Conteúdo Principal*/
+
+.container{
+display: flex; 
+padding: 2rem 2.5rem;
+gap: 3rem;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/*Grow: Flex de crescimento
+  Shrink: flex de encolhimento
+  Basis:tamanho padrão*/
+
+#posts-contrainer{
+    flex: 3  1  0; 
+
+}
+.post{
+    margin-bottom: 2.5rem;
+}
+
+.post img{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.title, 
+.description,
+.author{
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 2rem;
+
+}
+
+.author{
+    color: #333;
+    font-weight: bold;
+
+}
+
+/*barra lateral*/
+
+#sidebar{
+    flex: 1 1 0;
+
+}
+
+#search-bar,
+#categories,
+#tags{
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+
+}
+
+#search-bar h4,
+#categories h4,
+#tags h4{
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+
+}
+search-bar input{
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd
+
+}
+
+#search-bar input[type="submit"]{
+    cursor: pointer;
+    background-color: #37a1f7;
+    color: #fff;
+    border: none;
+}
